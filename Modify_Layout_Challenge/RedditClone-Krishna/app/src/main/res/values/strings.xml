@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">reddit</string>
+
+    <string name="subreddit">krishna</string>
+    <string name="postTitle">Udacity Modify Layout Challenge By Tavish Jain</string>
+    <string name="timestamp">2h</string>
+    <string name="source">i.redd.it</string>
+    <string name="circle">●</string>
+
+    <string name="voteCount">50.0k</string>
+    <string name="commentCount">10.0k</string>
+    <string name="share">Share</string>
+
+    <string name="home">Home</string>
+    <string name="popular">Popular</string>
+    <string name="hotPosts">Hot Posts</string>
+
+    <string-array name="subredditList">
+        <item>r/Krishna</item>
+        <item>r/Akash S</item>
+        <item>r/Vishal Sehgal</item>
+        <item>r/Aditi Soni</item>
+        <item>r/Pramod</item>
+        <item>r/Akshit sir</item>
+        <item>r/Sahil</item>
+        <item>r/Rishabh </item>
+        <item>r/abani</item>
+        <item>r/Pavbyte</item>
+        <item>r/Vvklingyat</item>
+        <item>r/kaushal</item>
+        <item>r/Rajat</item>
+        <item>r/Rahul</item>
+        <item>r/udacity</item>
+    </string-array>
+
+</resources>
