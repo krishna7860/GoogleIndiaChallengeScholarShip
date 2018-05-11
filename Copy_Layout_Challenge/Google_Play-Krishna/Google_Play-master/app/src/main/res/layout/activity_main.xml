@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.example.android.googleplay.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/first_green_block"
+            android:background="@color/firstGreen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inside_green_bar"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:text="@string/home"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:text="@string/games"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:text="@string/movies"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:text="@string/music"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginRight="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/shadow_back">
+
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="@dimen/margin_22"
+                    android:layout_height="@dimen/margin_22"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:src="@drawable/ham" />
+
+                <TextView
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_15"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_9"
+                    android:layout_toRightOf="@id/burger"
+                    android:text="@string/google_play"
+                    android:textSize="@dimen/text_20"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_22"
+                    android:layout_height="@dimen/margin_22"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:src="@drawable/mic" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="@dimen/margin_120"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/round_button"
+                    android:text="@string/top_charts"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:layout_width="@dimen/margin_120"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/round_button"
+                    android:text="@string/categories"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:layout_width="@dimen/margin_150"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/round_button"
+                    android:text="@string/editors_choice"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:layout_width="@dimen/margin_120"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/round_button"
+                    android:text="@string/early_access"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8"
+            android:background="@drawable/shadow_back_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="@string/more"
+                android:textAllCaps="true"
+                android:textColor="@color/colorMore"
+                android:textSize="@dimen/text_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/new1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_9"
+                android:text="@string/new_updated_games"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new1"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="@string/selected_games_of_the_week" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sel"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_9"
+                        android:layout_marginLeft="@dimen/margin_9"
+                        android:layout_marginTop="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/coc_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/coc" />
+
+                        <TextView
+                            android:id="@+id/coc_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/coc_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/clash_of_clans"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/coc_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/coc_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_80_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/coc_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/coc_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/will_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/will" />
+
+                        <TextView
+                            android:id="@+id/will_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/will_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/will_hero"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/will_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/will_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_53_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/will_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/will_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_9"
+                        android:layout_marginRight="@dimen/margin_9"
+                        android:layout_marginTop="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/fifa_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/fifa" />
+
+                        <TextView
+                            android:id="@+id/fifa_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fifa_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/fifa_soccer"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/fifa_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fifa_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_49_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/fifa_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/fifa_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_9"
+                        android:layout_marginRight="@dimen/margin_9"
+                        android:layout_marginTop="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/golf_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/golf" />
+
+                        <TextView
+                            android:id="@+id/golf_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/golf_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/golf_clash"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/golf_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/golf_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_68_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/golf_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/golf_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:background="@drawable/shadow_back_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/more"
+                android:textAllCaps="true"
+                android:textColor="@color/colorMore"
+                android:textSize="@dimen/text_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_9"
+                android:text="@string/simulate_your_world"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sim"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/dokdo_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/dokdo" />
+
+                        <TextView
+                            android:id="@+id/dokdo_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dokdo_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/dokdo"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/dokdo_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dokdo_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_38_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/dokdo_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/dokdo_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_9"
+                        android:layout_marginRight="@dimen/margin_9"
+                        android:layout_marginTop="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/the_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/the" />
+
+                        <TextView
+                            android:id="@+id/the_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/the_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/the_trail"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/the_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/the_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_39_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/the_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/the_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_9"
+                        android:layout_marginRight="@dimen/margin_9"
+                        android:layout_marginTop="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/sco_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/score" />
+
+                        <TextView
+                            android:id="@+id/sco_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sco_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/score_hero"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/sco_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sco_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_84_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/sco_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/sco_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_9"
+                        android:layout_marginRight="@dimen/margin_9"
+                        android:layout_marginTop="@dimen/margin_9">
+
+                        <ImageView
+                            android:id="@+id/pla_1"
+                            android:layout_width="@dimen/margin_90"
+                            android:layout_height="@dimen/margin_85"
+                            android:src="@drawable/plague" />
+
+                        <TextView
+                            android:id="@+id/pla_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/pla_1"
+                            android:layout_marginTop="@dimen/margin_12"
+                            android:text="@string/plague_inc"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/pla_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/pla_2"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="@string/_50_mb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/pla_3"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_toRightOf="@id/pla_3"
+                            android:text="@string/free"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorFreeText" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
