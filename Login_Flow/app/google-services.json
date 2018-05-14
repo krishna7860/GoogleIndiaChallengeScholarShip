@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "751792606859",
+    "firebase_url": "https://loginfirebase-71022.firebaseio.com",
+    "project_id": "loginfirebase-71022",
+    "storage_bucket": "loginfirebase-71022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751792606859:android:58c4d74f5623aafe",
+        "android_client_info": {
+          "package_name": "com.example.krishna.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751792606859-e04ift04310otgv2ll72d4mk9bkbf04g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5-col8LLsKuE1LFII0WM9FTEmhJ2EDmE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
